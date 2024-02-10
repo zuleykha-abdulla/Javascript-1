@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./app.js/script.js" />
+  </head>
+  <body>
+    <div class="deyisen">
+      Müxtəlif yazıları, dəyişənləri aşağıdakı şəkildə birləşdirə bilərik.
+    </div>
+
+    <div class="tip">
+      <h1>
+        Ədədlər, yazılar və məntiqi tip <span>(Number, String, Boolean)</span>
+      </h1>
+
+      <p>
+        Dəyişənə həm yazılar, həm də ədədlər verə bilərik. Ədəd verdiyimizdə
+        dəyişənin tipi ədəd tipi <span>(Number)</span>, yazı verdiyimizdə isə
+        dəyişənin tipi yazı tipi <span>(string) </span>olmuş olur. Ədədlər adi
+        şəkildə yazılır, yazılar isə dırnaq arasında yazılır.
+      </p>
+
+      <div class="numune">
+        <p>
+          var a=5;
+          <br />
+          var b=”salam”;
+          <br />
+        </p>
+      </div>
+
+      <p>
+        Burada a dəyişəni ədəd tipində <span>(Number)</span>, b dəyişəni isə
+        yazı tipindədir <span>(string)</span>. Ədədlər toplandıqda adi şəkildə
+        toplanır.
+      </p>
+      <br />
+      <div class="numune">
+        <p>
+          var a=5;
+          <br />
+          var b=7;
+          <br />
+          alert(a+b);
+          <br />
+        </p>
+      </div>
+
+      <h3>
+        <span>String </span>tipli dəyişənləri topladıqda isə onlar yan-yana
+        yazılmış olur
+      </h3>
+
+      <div class="numune">
+        <p>
+          var a=" Hello! ";
+          <br />
+          var b=" Welcome to Baku! ";
+          <br />
+          alert(a+b);
+        </p>
+      </div>
+    </div>
+
+    <script>
+      //Müxtəlif yazıları, dəyişənləri aşağıdakı şəkildə birləşdirə bilərik
+      var a = 90;
+      var b = "suret: " + a;
+      alert(b);
+      // bu zaman bildiris b deyisenin daxilindeki ifadeni goseterecek
+
+      //Əgər, “temperatur 25 derecedir” yazmaq istəsək kod aşağıdakı şəkildə olacaq
+
+      var a = 90;
+      var b = "suret: " + a + " km/saatdir";
+      alert(b);
+      document.write("<br>");
+      //Ədədlər toplandıqda adi şəkildə toplanır
+      var a = 5;
+      var b = 7;
+      alert(a + b);
+      document.write("<br>");
+
+      //String tipli dəyişənləri topladıqda isə onlar yan-yana yazılmış olur.
+      var a = "Hello!";
+      var b = " Welcome to Baku";
+      alert(a + b);
+      document.write("<br>");
+      //String və ədədi topladıqda da içindəkilər yan-yana yazılmış olacaq
+      var a = "heyetde";
+      var b = 6;
+      var c = "masin var";
+      alert(a + b + c);
+      //Yazı tipindəki məlumatlar toplandıqda yan-yana yazılmış olur
+      var a = "5";
+      var b = "6";
+      alert(a + b);
+      //ve bu zaman edeler uzerinde emeliyyat tetbiq etmek qeyri-mumkun
+
+      var a = prompt("Birinci eded");
+      var b = prompt("Ikinci eded");
+      alert(a + b);
+    </script>
+  </body>
+</html>

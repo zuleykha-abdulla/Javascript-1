@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: rgb(12, 12, 12);
+  margin-top: 30px;
+  padding-left: 30px;
+  font-size: large;
+  color: aliceblue;
+}
+span {
+  color: rgb(255, 0, 170);
+  font-weight: bold;
+}
+.numune {
+  display: block;
+  margin: 0 auto;
+  background-color: blue;
+  height: 150px;
+  width: 250px;
+  border: 2px solid white;
+  border-radius: 30%;
+  margin-top: 20px;
+}
+.numune p {
+  text-align: center;
+  margin-top: 20px;
+}
+.tip h1,
+h3,
+p {
+  margin-top: 30px;
+}

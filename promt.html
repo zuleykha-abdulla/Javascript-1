@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt funksiyası</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./app.js/script.js" />
+  </head>
+  <body>
+    <div class="promt">
+      <br />
+      <p>
+        Deməli, bu funksiya <span>alert </span>funksiyasına çox oxşar bir
+        funksiyadır. Hər iki funksiyada da bir xəbərdarlıq qutusu çıxır. Ancaq,
+        alert funksiyası sadəcə istifadəçiyə xəbərdarlıq qutusu daxilində
+        məlumat göstərmək üçün istifadə olunur. İstifadə etdiyimiz
+        <span>prompt</span> funksiyasında isə, xəbərdarlıq qutusu daxilində bir
+        sahə yaranır və istifadəçi o sahəyə istədiyi yazını daxil edə bilir.
+        İstifadəçi yazını daxil edib “Ok” düyməsinə basdıqdan sonra
+        <span>ad=prompt();</span>
+        yazdığımız üçün daxil edilən yazı ad dəyişəninə ötürülmüş olur. Bundan
+        sonra isə biz ad dəyişənini çap edirik.
+      </p>
+    </div>
+    <hr />
+
+    <script>
+      //promt funksiyasi zamani bir xəbərdarlıq qutusu çıxır.
+      var ad;
+      ad = prompt();
+      document.write("<h1>Welcome to Baku</h1> ");
+      document.write(ad);
+      document.write("<br>");
+      //promt funksiyasi finish
+
+      //ədəd üzərinde hesablama əməliyyatı da apara bilərik
+      var x;
+      x = prompt("Kvadratini tapmaq istediyiniz ededi daxil edin:");
+
+      document.write(x * x);
+      document.write("<br>");
+    </script>
+  </body>
+</html>

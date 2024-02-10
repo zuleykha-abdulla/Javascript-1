@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parselent</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./app.js/script.js" />
+  </head>
+  <body>
+    <div class="cevirme">
+      <p>
+        Əgər, daxil edilmiş məlumatların yazı şəklində yox, ədəd şəklində
+        toplanmasını istəyiriksə bunun üçün dəyişənin tipini yazıdan ədədə
+        çevirməliyik. Bunun ən asan yollarından biri dəyişəni 1-ə vurmaqdır.
+        Nümunəyə baxaq:
+      </p>
+
+      <div class="numune">
+        <p>
+          var a=prompt("Birinci eded");
+          <br />
+          var b=prompt("Ikinci eded");
+          <br />
+          alert(a*1+b*1);
+        </p>
+      </div>
+      <p>
+        Dəyişənin tipini yazıdan ədədə çevirmək üçün başqa yollar da var. Bu
+        yollardan biri <span>parseInt()</span> funksiyasından istifadə etməkdir.
+        Nümunəyə baxaq:
+      </p>
+      <div class="numune">
+        <p>
+          var a=prompt("Birinci eded");
+          <br />
+          var b=prompt("Ikinci eded");
+          <br />
+          var c=parseInt(a);
+          <br />
+          var d=parseInt(b);
+          <br />
+          alert(c+d);
+        </p>
+      </div>
+    </div>
+
+    <div class="parselent">
+      <p>
+        Bu funksiyanı istifadə etmək üçün mütləq <span>stringlərə</span> ehtiyac
+        yoxdur. Bu funksiyanı adi ədədlərin də tam hissəsini tapmaq üçün
+        istifadə etmək olar. Nümunəyə baxaq:
+      </p>
+      <div class="numune">
+        <p>
+          var a=parseInt(5.5);
+          <br />
+          var b=parseInt(6);
+          <br />
+          alert(a+b);
+          <br />
+          <span>nəticə 11 olacaq</span>
+        </p>
+      </div>
+      <h3>
+        Əgər, ədədlərin tam hissələrini yox, özünü istifadə etmək istəyiriksə o
+        zaman <span>parseFloat()</span> funksiyasından istifadə edə bilərik.
+        Nümunəyə baxaq:
+      </h3>
+      <div class="numune">
+        <p>
+          var a=prompt("Birinci eded");
+          <br />
+
+          var b=prompt("Ikinci eded");
+          <br />
+          var c=parseFloat(a);
+          <br />
+          var d=parseFloat(b);
+          <br />
+          alert(c+d);
+          <br />
+
+          <span>nəticə 11,5 olacaq</span>
+        </p>
+      </div>
+    </div>
+    <div class="true">
+      <h3>
+        Ədədlər və yazılardan əlavə məntiqi tip də mövcuddur. Məntiqi tip
+        <span>true və false</span> qiymətlərini alır.
+        <span>True doğru, false isə yalnış</span> mənasına gəlməkdədir. Bir şey
+        doğru olduqda onun qiyməti true, yalnış olduqda isə false olur. Nümunəyə
+        baxaq.
+      </h3>
+      <div class="numune">
+        <p>
+          var a=true; // Dogru
+          <br />
+          var b=false; // Yalnis
+          <br />
+          alert(a);
+          <br />
+          alert(b);
+        </p>
+      </div>
+    </div>
+
+    <script>
+      //məlumatların yazı şəklində yox, ədəd şəklində toplanmasını istəyiriksə
+      var a = prompt("Birinci eded");
+      var b = prompt("Ikinci eded");
+      alert(a * 1 + b * 1);
+      //  Dəyişənin tipini yazıdan ədədə çevirmək üçün parseInt() funksiyasindan istifade edilir
+      var a = prompt("Birinci eded");
+      var b = prompt("Ikinci eded");
+      var c = parseInt(a);
+      var d = parseInt(b);
+      alert(c + d);
+
+      document.write("<br>");
+      // dogru ve yanlis funksiyalari
+      var a = true;
+      var b = false;
+      alert(a);
+      alert(b);
+    </script>
+  </body>
+</html>

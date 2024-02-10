@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./app.js/script.js" />
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        Proqramlaşdırmada adicə yazıları da istifadəçiyə göstərmək üçün müxtəlif
+        funksiyalardan istifadə olunur. Javascriptdə də bunun üçün müxtəlif
+        funksiyalar mövcuddur. Javascriptdə də bunun üçün müxtəlif funksiyalar
+        mövcuddur. Bunlardan biri də <span>alert</span> funksiyasıdır.
+      </p>
+    </div>
+    <br />
+    <div class="box-first">
+      <p>
+        Yazıları, ifadələri istifadəçiyə göstərmək üçün işlədə biləcəyimiz
+        funksiyalardan biri də <span>document.write </span>funksiyasıdır. Burada
+        <span>document</span> obyektdir, <span>write</span> isə onu içindəki
+        funksiyadır. Funksiyanın istifadəsi <span>alert</span> funksiyasına
+        oxşardır, sadəcə, burada <span>alert</span> funksiyasından fərqli olaraq
+        yazı sadəcə brauzer üzərində yazılır, bildiriş şəklində gəlmir. İstifadə
+        etdiyimiz
+        <span>document.write </span>
+        funksiyasının daxilində <span>html kodlarını </span>yaza və onları da
+        çap edə bilərik.
+      </p>
+      <br />
+      <h1>Ədədlər və hesablamalar</h1>
+      <p>
+        <span>document.write </span> funksiyasında yazıları dırnaq işarəsi
+        arasında yazırdıq. Ancaq, ədədləri yazarkən dırnaq işarəsi qoymağa
+        ehtiyac olmur.
+      </p>
+      <p>
+        Ən sadə hesablama əməliyyatları toplama, çıxma, vurma və bölmə
+        əməliyyatlarıdır ki, javascript daxilində də bunları asanlıqla yerinə
+        yetirə bilərik. Aşağıdakı koda baxaq:
+      </p>
+    </div>
+    <script>
+      //alert daxil edirik, bu zaman bildiriş şəklində gorunur, yeni bir xəbərdarlıq qutusu gorunur
+      alert("Hello Javascript!");
+
+      document.write("<br>");
+      //yazı sadəcə brauzer üzərində qeyd edilir
+
+      document.write(
+        "Burada alert funksiyasından fərqli olaraq yazı sadəcə brauzer üzərində yazılır, bildiriş şəklində gəlmir."
+      );
+      document.write("<br>");
+
+      document.write("<h1>Javascriptlə yazıların göstərilməsi!</h1>");
+      document.write("<h1>Ədədlər və hesablamalar <h1>");
+      //Ədədlər və hesablamalar
+      document.write("<br>");
+      document.write(66);
+      document.write("<br>");
+      document.write(8 + 9);
+      document.write("<br>");
+      document.write(9 - 5);
+      document.write("<br>");
+      document.write(10 * 5);
+      document.write("<br>");
+      document.write(28 / 4);
+      document.write("<br>");
+      document.write((9 + 5) * 3 + (9 + 1) / 2);
+      document.write("<br>");
+      document.write("<br>");
+      //Dəyişən anlayışı
+      document.write("<h1>Dəyişən anlayışı<h1>");
+      document.write("<br>");
+      document.write(
+        "<h3>Javascript dilində dəyişənləri elan etmək üçün <span>var</span> açar sözünə ehtiyac duyuruq. Bu söz <span>variable</span> sözünün qısaldılmasıdır ki, elə bu sözün mənası da dəyişən deməkdir. Dəyişənin əsas olaraq bir adı və dəyəri mövcud olur. Dəyişənimiz adını özümüz təyin edə bilərik. Aşağıdakı nümunəyə baxaq. </h3>"
+      );
+      document.write("<br>");
+      document.write(
+        "<h3>Beləliklə x adlı dəyişəni elan etmiş oluruq. Gördüyümüz kimi, dəyişəninn yaradılması kifayət qədər sadədir. Digər funksiyalarda olduğu kimi, dəyişəni elan etdikdən sonra da sətrin sonunda nöqtəli vergül qoymağımız mütləqdir. Kodu yadda saxlayıb brauzerdə səhifəni açdıqda heç nə baş vermədiyini görəcəyik. Çünki biz sadəcə dəyişəni elan etmişik, o dəyişənlə heç bir əməliyyat aparmamışıq. Aşağıdakı qaydada həmin dəyişənə qiymət verək.</h3>"
+      );
+      var x;
+      x = 5;
+      document.write(x);
+      document.write("<br>");
+
+      // burda deyisen suret ve sureti 60 ededi daxil edilir
+
+      var suret;
+      suret = 60;
+      document.write(" Masinin sureti saatda ");
+      document.write(suret);
+      document.write(" km-dir.");
+      document.write("<br>");
+
+      //burda deyisen corek
+
+      var corek;
+      corek = 80;
+      document.write("Magazaya daxil olan corek ");
+      document.write(corek);
+      document.write(" denedir ");
+      document.write("<br>");
+
+      //burda deyisen turist
+
+      var turist;
+      turist = 90;
+      document.write(" Hotelde yerlesdirilen turistlerin sayi ");
+      document.write(turist);
+      document.write(" neferdir ");
+      document.write("<br>");
+      document.write(
+        "Eyni sətirdə bir neçə dəyişəni də elan etməyimiz mümkündür, Bunun üçün sadəcə onları vergüllə ayırmalıyıq. Aşağıdakı nümunəyə baxaq."
+      );
+      document.write("<br>");
+
+      //eyni zamanda bir nece deyisen daxil etmek mumkun
+
+      var x, y, z;
+      x = 25;
+      y = 100;
+      z = 200;
+      document.write(x);
+      document.write("<br>");
+      document.write(y);
+      document.write("<br>");
+      document.write(z);
+      document.write("<br>");
+      document.write(
+        "Hesablama əməliyyatlarını dəyişənlər üzərində də aparmağımız mümkündür. Aşağıdakı nümunəyə baxaq."
+      );
+      document.write("<br>");
+      //deyisenler uzerinde emeliyyat aparilir
+
+      var x, y, z;
+      x = 25;
+      y = 20;
+      z = 45;
+      document.write(x + y + z);
+      document.write("<br>");
+
+      document.write(
+        "Dəyişənlərin qiymətlərinin cəmini üçüncü bir dəyişəndə də yadda saxlaya bilərik."
+      );
+      document.write("<br>");
+
+      var x, y, z, d;
+      x = 75;
+      y = 100;
+      z = 50;
+      d = x + y - z;
+      document.write(d);
+      document.write("<br>");
+      document.write(
+        "Dəyişənlərə qiymət olaraq ədədlərdən əlavə yazıları da verə bilərik. Aşağıdakı nümunəyə baxaq."
+      );
+      document.write("<br>");
+      var x;
+      x = "Deyisen";
+      document.write(x);
+      document.write("<br>");
+
+      document.write(" Bu zaman sadəcə yazılar yan-yana yazılacaq.");
+      document.write("<br>");
+
+      var x, y;
+      x = "Birinci Deyisen ";
+      y = "Ikinci Deyisen";
+      document.write(x + y);
+      document.write("<br>");
+    </script>
+  </body>
+</html>
